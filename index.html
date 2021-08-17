@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat на JS</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <template data-page="login">
+      <div class="center" data-page="login">
+        <div class="form">
+          <div class="form_title">Представьтесь</div>
+          <input type="text" class="input" data-input="login" />
+          <div class="subtitle subtitle-right">Введите имя и нажмите Enter</div>
+        </div>
+      </div>
+    </template>
+
+    <template data-page="chat">
+      <div class="container" data-page="chat">
+        <div class="chat">
+          <div class="chat-history">
+            <div class="chat-divider"></div>
+            <div class="chat-message">
+              <div class="chat-info">
+                <div class="chat-username">Алексей</div>
+                <div class="chat-timestamp">16:05:12</div>
+              </div>
+              <div class="chat-state">
+                <div class="chat-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, nesciunt repellendus. Quae sit ipsum hic eligendi
+                  quam praesentium iure repellat.
+                </div>
+                <div class="chat-rating-panel">
+                  <div class="chat-rating chat-like">1</div>
+                  <div class="chat-rating chat-dislike">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-message">
+              <div class="chat-info">
+                <div class="chat-username">Алексей</div>
+                <div class="chat-timestamp">16:05:12</div>
+              </div>
+              <div class="chat-state">
+                <div class="chat-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, nesciunt repellendus. Quae sit ipsum hic eligendi
+                  quam praesentium iure repellat.
+                </div>
+                <div class="chat-rating-panel">
+                  <div class="chat-rating chat-like">1</div>
+                  <div class="chat-rating chat-dislike">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-message">
+              <div class="chat-info">
+                <div class="chat-username">Алексей</div>
+                <div class="chat-timestamp">16:05:12</div>
+              </div>
+              <div class="chat-state">
+                <div class="chat-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, nesciunt repellendus. Quae sit ipsum hic eligendi
+                  quam praesentium iure repellat.
+                </div>
+                <div class="chat-rating-panel">
+                  <div class="chat-rating chat-like">1</div>
+                  <div class="chat-rating chat-dislike">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-message">
+              <div class="chat-info">
+                <div class="chat-username">Алексей</div>
+                <div class="chat-timestamp">16:05:12</div>
+              </div>
+              <div class="chat-state">
+                <div class="chat-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, nesciunt repellendus. Quae sit ipsum hic eligendi
+                  quam praesentium iure repellat.
+                </div>
+                <div class="chat-rating-panel">
+                  <div class="chat-rating chat-like">1</div>
+                  <div class="chat-rating chat-dislike">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-message">
+              <div class="chat-info">
+                <div class="chat-username">Алексей</div>
+                <div class="chat-timestamp">16:05:12</div>
+              </div>
+              <div class="chat-state">
+                <div class="chat-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, nesciunt repellendus. Quae sit ipsum hic eligendi
+                  quam praesentium iure repellat.
+                </div>
+                <div class="chat-rating-panel">
+                  <div class="chat-rating chat-like">1</div>
+                  <div class="chat-rating chat-dislike">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-message">
+              <div class="chat-info">
+                <div class="chat-username">Алексей</div>
+                <div class="chat-timestamp">16:05:12</div>
+              </div>
+              <div class="chat-state">
+                <div class="chat-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, nesciunt repellendus. Quae sit ipsum hic eligendi
+                  quam praesentium iure repellat.
+                </div>
+                <div class="chat-rating-panel">
+                  <div class="chat-rating chat-like">1</div>
+                  <div class="chat-rating chat-dislike">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-message">
+              <div class="chat-info">
+                <div class="chat-username">Алексей</div>
+                <div class="chat-timestamp">16:05:12</div>
+              </div>
+              <div class="chat-state">
+                <div class="chat-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora, nesciunt repellendus. Quae sit ipsum hic eligendi
+                  quam praesentium iure repellat.
+                </div>
+                <div class="chat-rating-panel">
+                  <div class="chat-rating chat-rating-empty chat-like"></div>
+                  <div class="chat-rating chat-rating-empty chat-dislike"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-panel">
+            <input type="text" class="input" style="text-align: left" />
+            <button class="action" style="width: inherit">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template data-page="coj">
+      <div class="center" data-page="coj">
+        <div class="form">
+          <div class="form_title">Создать или присоединиться</div>
+          <div class="actions">
+            <button class="action" data-action="create">Создать</button>
+            <button class="action" data-action="join">Присоединиться</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template data-page="create">
+      <div class="center" data-page="create">
+        <div class="form">
+          <div class="form_title">Создать чат</div>
+          <div class="form_group">
+            <div class="form_label">Название:</div>
+            <input type="text" class="input" />
+          </div>
+          <div class="form_group">
+            <div class="form_label">Пароль:</div>
+            <input type="password" class="input" />
+            <div class="subtitle subtitle-right subtitle_group">
+              Оставьте пустым если вход свободный
+            </div>
+          </div>
+          <div class="form_group">
+            <div class="form_label">Публичный:</div>
+            <input type="checkbox" class="input checkbox" />
+          </div>
+          <button class="action">Создать</button>
+        </div>
+      </div>
+    </template>
+
+    <template data-page="join">
+      <div class="center" data-page="join">
+        <div class="form">
+          <div class="form_title">Присоединиться</div>
+          <div class="form_group">
+            <div class="form_label">Название:</div>
+            <input type="text" class="input" data-input="title" />
+            <div class="subtitle subtitle-right subtitle_group">
+              Оставьте пустым для входа в главный чат
+            </div>
+          </div>
+          <div class="form_group">
+            <div class="form_label">Пароль:</div>
+            <input type="password" class="input" data-input="password" />
+          </div>
+          <button class="action" data-action="join">Присоединиться</button>
+
+          <ul class="chat-list" data-list="chats">
+
+          </ul>
+        </div>
+      </div>
+    </template>
+
+    <template data-segment="chat-room">
+      <li class="chat-item">
+        <span class="lock-none" data-flag="lock"></span>
+        <span data-flag="counter">(12)</span>
+        <span data-flag="title">Верстка</span>
+      </li>
+    </template>
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>
