@@ -1,6 +1,8 @@
+export const ENTER_KEY = "Enter";
+
 const app = document.querySelector("div#app");
 
-function setTemplate(pageLabel) {
+export function setTemplate(pageLabel) {
   const template = document.querySelector(`template[data-page=${pageLabel}]`);
 
   const segment = document.importNode(template.content, true);
@@ -8,4 +10,9 @@ function setTemplate(pageLabel) {
   app.append(segment);
 }
 
-export default setTemplate;
+export const { format } = new Intl.DateTimeFormat('ru-RU', {
+  hour12: false,
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric'
+});

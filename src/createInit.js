@@ -1,4 +1,4 @@
-import setTemplate from './setTemplate.js';
+import { setTemplate } from "./additional.js";
 
 function createInit() {
   setTemplate("create");
