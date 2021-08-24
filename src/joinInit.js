@@ -69,7 +69,7 @@ function joinInit() {
 		socket.off("chats", listUpdate);
 	}
 
-	socket.emit("join")
+	// socket.emit("join")
 }
 
 export default joinInit;

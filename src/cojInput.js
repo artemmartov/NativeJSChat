@@ -11,7 +11,7 @@ function cojInput() {
 	createButton.addEventListener("click", createInit);
 	joinButton.addEventListener("click", joinInit);
 
-	joinInit();
+	createInit();
 }
 
 export default cojInput;

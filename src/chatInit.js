@@ -94,9 +94,8 @@ function chatInit() {
 		})
 
 		messageIdDiv.dataset.id = message.id;
-
 		messagesDiv.append(messageElement);
-	
+		messagesDiv.scrollTop = messagesDiv.scrollHeight;
 	}
 }
 
